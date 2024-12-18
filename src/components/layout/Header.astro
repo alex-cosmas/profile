@@ -9,13 +9,17 @@ const navLinks = [
     text: "About",
   },
   {
-    href: "/projects",
-    text: "Projects",
+    href: "https://flowcv.com/resume/jps5stii67",
+    text: "Resume",
   },
-  {
-    href: "/blog",
-    text: "Writing",
-  },
+  // {
+  //   href: "/projects",
+  //   text: "Projects",
+  // },
+  // {
+  //   href: "/blog",
+  //   text: "Writing",
+  // },
 ];
 
 const { pathname } = Astro.url;
@@ -37,7 +41,13 @@ const { pathname } = Astro.url;
         }
 
         return (
-          <a href={href} class="relative isolate">
+          <a
+            href={href}
+            class="relative isolate"
+            {...(text === "Resume"
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {})}
+          >
             <div
               class:list={[
                 "absolute green-fade h-11 w-11 rounded-full -left-4 -top-[0.875rem] -z-10",
