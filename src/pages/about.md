@@ -1,39 +1,47 @@
 ---
 layout: ../layouts/BlogPost.astro
 title: About Me
-description: Aspiring web developer. Find out a little more about me and what I do.
+description: Experienced product designer. Find out a little more about me and what I do.
 pubDate: 2022-02-18T11:00:00.000Z
 lastEdit: 2022-02-18T11:00:00.000Z
 heroImage: /uploads/scratch.png
 ---
 
-## Who I am
+Hello! I'm Alex Cosmas. Proud son, devoted brother, loving husband, loyal friend, and dedicated mentor.
+Passionate about cars, road trips, adventures, nature, music, art, and the joy of discovering something new.
 
-Hello! I'm Matthew Tao, an aspiring front-end developer currently studying Computer Science at the University of Auckland.
+# My Journey
 
-My first encounter with code was at the age of thirteen when I signed up for a coding club at my school. We were taught the fundamentals of programming with a programming language called Scratch.
+I started my career at the intersection of creativity and technology, building my foundation as a Web Developer. Immersing myself in code and design, I quickly transitioned into Frontend Development, where my curiosity about how users interact with products led me to explore UX and Product Design.
 
-I liked the idea of creating something completely original and being able to translate an idea into something more concrete, and I started to code in my free time as a hobby. This is when I wrote (more like drag and drop) the ***worst*** code in my life.
+It was during this phase that I discovered my passion: turning complex challenges into elegant, user-centered solutions. This curiosity evolved into a commitment to Product Development and Management, where I now thrive—solving enterprise problems in B2B startups across industries like EdTech, Logistics, and Corporate Governance & Compliance.
 
-![If only I knew what a function was...](/uploads/scratch.png)
+Today, as the **Product Lead at Simple Formations**, I guide cross-functional teams to create meaningful digital experiences that drive impact. Based in Nairobi, Kenya, I bring a global perspective to local problems, connecting diverse ideas to create products that truly matter.
 
-I drew a lot as a kid because I loved art and design. I clearly remember this three-month period where I was absolutely obsessed with designing logos and watched hours and hours of YouTube videos covering them.
+---
 
-I think my love for web development has been a natural follow-on from these two interests. I get to bash my head against a problem until it gives while trying to make pleasing designs.
+# What I Bring to the Table
 
-## Technologies I've used
+**A Unique Blend of Skills:**  
+ My journey has given me a rare combination of design, engineering, and strategic product management expertise. I don’t just create; I align vision with execution, ensuring every product is as functional as it is innovative.
 
-### Languages
+**User-Centric Innovation:**  
+ I excel at simplifying complexity—turning intricate challenges into user-friendly solutions that meet business goals.
 
-* Python
-* Javascript (Typescript is sooo much nicer! 💖)
-* Dart
-* Java
+**Hands-On Resourcefulness:**  
+ Whether it’s research, workflows, prototyping, or managing a team, I thrive on diving into the details to make things happen.
 
-Next on my list is to learn a functional-focused language such as F# to pick up some of the paradigms and expand the number of tools I have for any given problem.
+**Strategic Leadership:**  
+ I see the big picture and work backward to build products that not only solve today’s problems but anticipate tomorrow’s needs.
 
-### Frameworks
+---
 
-Most of the time, I use React frameworks. Funnily enough, the main reason for this is simply because of one library - Framer Motion. I'm comfortable with the fundamentals of websites (HTTPS, Forms, Responses, vanilla HTML, CSS, etc.) I'm confident that I can pick up and adapt to pretty much any framework.
+# Why I Do What I Do
 
-Most comfortable with Remix currently as it's got the nicest co-location I've seen. I'm hoping to look into SvelteKit more, especially once Svelte 5.0 is out since I've heard that a new animation API will be included, more similar to Framer Motion!
+I’m passionate about crafting digital experiences that solve meaningful problems. My work is driven by a belief that technology, when designed with empathy, has the power to transform how we live, learn, and work. I thrive in roles where collaboration, innovation, and user feedback shape the process—ensuring that every product delivers both value and delight.
+
+---
+
+# Let’s Build Together
+
+If you’re looking for someone who bridges design, engineering, and strategy, and thrives on delivering impactful solutions, let’s connect. I’m always seeking opportunities to collaborate on projects that challenge the norm and create lasting value.

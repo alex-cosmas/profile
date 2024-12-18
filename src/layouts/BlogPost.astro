@@ -46,24 +46,25 @@ const length = countWords(Astro.props.rawContent());
           alt=""
           class="absolute -z-10 left-0 top-0 -bottom-2 -translate-x-12"
         />
-        <h1 class="mb-[4.5rem]">{title}</h1>
 
         <div class="flex flex-col">
-          <FormattedDate dateString={pubDate} />
-          <span>
-            {length} words
-          </span>
+          <!-- <FormattedDate dateString={pubDate} /> -->
           <span>
             {Math.ceil(length / 200)} min read
+          </span>
+          <span>
+            {length} words
           </span>
         </div>
       </aside>
       <section
         class="w-full max-w-[55ch] text-b-gray content-md mt-2 flex-grow md:w-0"
       >
+        <h1 class="mb-[4.5rem]">{title}</h1>
+
         <slot />
       </section>
-      <ExpandedContact />
+      <!-- <ExpandedContact /> -->
     </main>
   </body>
 </html>

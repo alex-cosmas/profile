@@ -12,7 +12,7 @@ export interface Props {
 }
 
 const defaultDescription =
-  "Matthew Tao is an Auckland based front-end developer who focuses on the little things that make a website delightful.";
+  "Alex Cosmas is an Nairobi based Product Designer focusing on turning complex ideas into simple easy to use products";
 const ogImage = "/social.jpg";
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
@@ -33,14 +33,14 @@ const { title, description, image, publishedTime, modifiedTime } = Astro.props;
 
 <SEO
   title={title}
-  titleTemplate="%s · Matthew Tao"
-  titleDefault="Matthew Tao"
+  titleTemplate="%s · Alex Cosmas"
+  titleDefault="Alex Cosmas"
   description={description || defaultDescription}
   canonical={canonicalURL}
   charset="utf-8"
   openGraph={{
     basic: {
-      title: title ? `${title} · Matthew Tao` : "Matthew Tao",
+      title: title ? `${title} · Alex Cosmas` : "Alex Cosmas",
       type: "website",
       image: image || ogImage,
       url: canonicalURL,
@@ -53,7 +53,7 @@ const { title, description, image, publishedTime, modifiedTime } = Astro.props;
     image: {
       width: image ? null : "1200",
       height: image ? null : "630",
-      alt: title || "Matthew Tao",
+      alt: title || "Alex Cosmas",
     },
   }}
   twitter={{
