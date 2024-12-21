@@ -4,25 +4,29 @@
       "title": "Affinity",
       "description": "The capstone project for my computer science degree, Affinity is a mobile app built mainly with React Native and Fastify. The app is an alternative approach to what an ethical dating app could look like, avoiding addictive patterns such as swiping. Affinity also gives much more filtering control to the user, rather than relying on an algorithm.",
       "date": "2024-10-23T11:00:00.000Z",
-      "image": "/uploads/Poster (1).jpg"
+      "image": "/uploads/Poster (1).jpg",
+      "slug": "affinity"
     },
     {
       "title": "Environ",
       "description": "An app that utilises AI to encourage recycling. I built this app for my scholarship digital technologies project in year 13, it's made with Flutter and uses an AI model that I trained off data from Kaggle.",
       "date": "2023-06-29T12:00:00.000Z",
-      "image": "/uploads/environ.webp"
+      "image": "/uploads/environ.webp",
+      "slug": "environ"
     },
     {
       "title": "blogg",
       "description": "Despite the name, blogg was a messaging that I made to learn more about developing Flutter apps. It was also a way of getting around my school's internet filter (don't tell anyone!). ",
       "date": "2023-06-29T12:00:00.000Z",
-      "image": "/uploads/blogg.webp"
+      "image": "/uploads/blogg.webp",
+      "slug": "blogg"
     },
     {
       "title": "Gif Creator",
       "description": "A simple web app that allows you to create meme gifs from images or videos. Built with Flask and ffmpeg-python.",
       "date": "2023-06-29T12:00:00.000Z",
-      "image": "/uploads/gif.webp"
+      "image": "/uploads/gif.webp",
+      "slug": "gif-creator"
     }
   ]
 }

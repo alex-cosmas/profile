@@ -145,29 +145,17 @@ export default defineConfig({
         label: "Projects",
         path: "src/data/projects",
         format: "json",
-        ui: {
-          allowedActions: {
-            create: false,
-            delete: false,
-          },
-        },
         fields: [
           {
-            label: "Projects",
             name: "projects",
+            label: "Projects",
             type: "object",
             list: true,
-            ui: {
-              itemProps: ({ title }) => {
-                return { label: title || "" };
-              },
-            },
             fields: [
               {
                 type: "string",
                 name: "title",
                 label: "Title",
-                isTitle: true,
                 required: true,
               },
               {
@@ -175,6 +163,9 @@ export default defineConfig({
                 name: "description",
                 label: "Description",
                 required: true,
+                ui: {
+                  component: "textarea",
+                },
               },
               {
                 type: "datetime",
@@ -186,6 +177,12 @@ export default defineConfig({
                 type: "image",
                 name: "image",
                 label: "Image",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "slug",
+                label: "Slug",
                 required: true,
               },
             ],

@@ -1,0 +1,87 @@
+---
+import { countWords } from "alfaaz";
+import projects from "../../data/projects/projects.json";
+import BaseHead from "../../components/layout/BaseHead.astro";
+import Header from "../../components/layout/Header.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
+
+export function getStaticPaths() {
+  const projectsArray = projects.projects || [];
+
+  if (!projectsArray.length) {
+    console.error("No projects found in projects.json");
+    return [];
+  }
+
+  return projectsArray.map((project) => {
+    if (!project.slug || typeof project.slug !== "string") {
+      throw new Error(`Invalid or missing slug for project: ${project.title}`);
+    }
+
+    return {
+      params: { slug: project.slug },
+      props: {
+        project,
+        nextProject:
+          projectsArray[
+            projectsArray.findIndex((p) => p.slug === project.slug) + 1
+          ] || null,
+        prevProject:
+          projectsArray[
+            projectsArray.findIndex((p) => p.slug === project.slug) - 1
+          ] || null,
+      },
+    };
+  });
+}
+
+const { project, nextProject, prevProject } = Astro.props;
+
+if (!project || !project.slug) {
+  return Astro.redirect("/404");
+}
+
+const length = countWords(project.description);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={project.title} description={project.description} />
+  </head>
+  <body class="mx-gutter overflow-x-hidden">
+    <div class="noise"></div>
+    <Header />
+    <main
+      class="flex gap-12 xl:gap-24 flex-nowrap flex-col md:flex-row justify-center items-center md:items-start md:justify-start mb-20"
+    >
+      <aside class="hidden lg:block max-w-[18ch] sticky top-8 h-fit">
+        <img
+          src="/dotssmall.svg"
+          alt=""
+          class="absolute -z-10 left-0 top-0 -bottom-2 -translate-x-12"
+        />
+        <div class="flex flex-col">
+          <FormattedDate dateString={project.date} class="text-b-minato" />
+          <span>
+            {Math.ceil(length / 200)} min read
+          </span>
+          <span>
+            {length} words
+          </span>
+        </div>
+      </aside>
+      <article
+        class="w-full max-w-[55ch] text-b-gray content-md mt-2 flex-grow md:w-0"
+      >
+        <h1 class="mb-[4.5rem]">{project.title}</h1>
+        <img
+          src={project.image}
+          alt=""
+          class="aspect-video object-cover my-8"
+        />
+        <p>{project.description}</p>
+      </article>
+    </main>
+  </body>
+</html>
