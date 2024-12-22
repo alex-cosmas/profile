@@ -23,4 +23,13 @@ export default defineConfig({
       theme: themeRosePineDawn,
     },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: undefined
+        }
+      }
+    }
+  }
 });
